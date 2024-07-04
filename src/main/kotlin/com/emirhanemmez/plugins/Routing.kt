@@ -1,5 +1,6 @@
 package com.emirhanemmez.plugins
 
+import com.emirhanemmez.routing.configureBookRouting
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
@@ -24,5 +25,7 @@ fun Application.configureRouting() {
             val userId = call.receive<String>()
             call.respondText { userId }
         }
+
+        configureBookRouting()
     }
 }
