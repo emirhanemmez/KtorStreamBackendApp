@@ -29,4 +29,7 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation("io.ktor:ktor-server-content-negotiation:2.3.12")
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.12")
+    implementation("org.jetbrains.exposed:exposed-core:0.52.0")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.52.0")
+    implementation("org.postgresql:postgresql:42.7.2")
 }
